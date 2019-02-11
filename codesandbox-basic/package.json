@@ -1,18 +1,20 @@
 {
-  "name": "final-form-vaadin-components",
+  "name": "vaadin-components-form",
   "version": "1.0.0",
-  "description": "This example demonstrates how to introduce a whole-record validation function. In a real application, the Field render functions would be abstracted away, but the duplicate code has been left in here to keep it simple.",
-  "keywords": [],
-  "homepage": "https://codesandbox.io/s/yk1zx56y5j",
-  "main": "index.html",
+  "description": "This example demonstrates how build a basic form with Vaadin components.",
+  "keywords": [
+    "web-components",
+    "vaadin",
+    "form"
+  ],
+  "homepage": "https://codesandbox.io/s/71mkll98k0",
+  "main": "index.js",
   "scripts": {
     "start": "owc-dev-server --app-index ../../index.html"
   },
   "dependencies": {
-    "@vaadin/vaadin-date-picker": "^3.3.2",
-    "@vaadin/vaadin-form-layout": "2.1.1",
-    "@vaadin/vaadin-text-field": "2.3.0",
-    "final-form": "4.6.1",
+    "@vaadin/vaadin": "12.0.5",
+    "@webcomponents/webcomponentsjs": "2.2.7",
     "lit-element": "2.0.1"
   },
   "devDependencies": {
