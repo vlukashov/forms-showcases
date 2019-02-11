@@ -2,13 +2,9 @@
   "name": "vaadin-components-form",
   "version": "1.0.0",
   "description": "This example demonstrates how build a basic form with Vaadin components.",
-  "keywords": [
-    "web-components",
-    "vaadin",
-    "form"
-  ],
+  "keywords": ["web-components", "vaadin", "form"],
   "homepage": "https://codesandbox.io/s/71mkll98k0",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "owc-dev-server --app-index ../../index.html"
   },

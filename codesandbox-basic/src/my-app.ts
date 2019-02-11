@@ -1,20 +1,12 @@
-import { html, css, LitElement } from "lit-element";
+import { html, css, LitElement, customElement } from "lit-element";
+
 import "@vaadin/vaadin-form-layout/vaadin-form-layout.js";
 import "@vaadin/vaadin-text-field/vaadin-text-field.js";
 import "@vaadin/vaadin-text-field/vaadin-text-area.js";
 import "@vaadin/vaadin-date-picker/vaadin-date-picker.js";
 
+@customElement("my-app")
 class MyApp extends LitElement {
-  static get styles() {
-    return css`
-      :host {
-        padding-left: 1em;
-        padding-right: 1em;
-        display: block;
-      }
-    `;
-  }
-
   render() {
     return html`
       <h1>Vaadin Components Example</h1>
@@ -44,6 +36,12 @@ class MyApp extends LitElement {
       </vaadin-form-layout>
     `;
   }
-}
 
-window.customElements.define("my-app", MyApp);
+  static styles = css`
+    :host {
+      padding-left: 1em;
+      padding-right: 1em;
+      display: block;
+    }
+  `;
+}
